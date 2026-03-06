@@ -1,0 +1,24 @@
+{
+  "headerData": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Problem Solving",
+      "href": "/problem-solving"
+    },
+    {
+      "label": "Critical Thinking",
+      "href": "/critical-thinking"
+    },
+    {
+      "label": "Communcation",
+      "href": "/communication"
+    },
+    {
+      "label": "Documentation",
+      "href": "/documentation"
+    }
+  ]
+}

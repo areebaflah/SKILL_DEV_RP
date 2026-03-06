@@ -1,0 +1,17 @@
+[
+  { "id": 1, "question": "I can clearly identify the main problem before attempting to solve it" },
+  { "id": 2, "question": "I break complex problems into smaller manageable parts" },
+  { "id": 3, "question": "I consider multiple solutions before choosing one" },
+  { "id": 4, "question": "I use logical reasoning to analyze problems" },
+  { "id": 5, "question": "I evaluate the effectiveness of my solutions" },
+  { "id": 6, "question": "I remain calm when faced with difficult problems" },
+  { "id": 7, "question": "I identify patterns in problems easily" },
+  { "id": 8, "question": "I ask relevant questions to clarify problems" },
+  { "id": 9, "question": "I apply previous experience to new problems" },
+  { "id": 10, "question": "I test solutions before finalizing them" },
+  { "id": 11, "question": "I can recognize incorrect assumptions" },
+  { "id": 12, "question": "I adjust my approach when a solution fails" },
+  { "id": 13, "question": "I prioritize information effectively" },
+  { "id": 14, "question": "I make decisions based on evidence" },
+  { "id": 15, "question": "I reflect on outcomes to improve future problem solving" }
+]

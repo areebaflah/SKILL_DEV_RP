@@ -1,0 +1,3 @@
+pip install fastapi uvicorn scikit-learn pandas numpy joblib
+scikit version 1.6.1
+Run FAST API Server : cd backend --> uvicorn main:app --reload
