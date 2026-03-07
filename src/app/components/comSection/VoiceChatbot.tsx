@@ -82,8 +82,8 @@ export default function VoiceChatbot() {
   const handleStart = async () => {
     setPhase('question');
     setCurrentQ(0);
-    addMessage('bot', "Hi! I'm your Communication Evaluator. I'll ask you 10 questions — just speak naturally after you press the microphone button. Let's begin!");
-    await speak("Hi! I'm your Communication Evaluator. I'll ask you 10 questions. Just speak naturally after you press the microphone button. Let's begin!");
+    addMessage('bot', "Hi! I'm your Communication Evaluator. I'll ask you 4 questions — just speak naturally after you press the microphone button. Let's begin!");
+    await speak("Hi! I'm your Communication Evaluator. I'll ask you 4 questions. Just speak naturally after you press the microphone button. Let's begin!");
     await askQuestion(0);
   };
 
@@ -243,16 +243,16 @@ export default function VoiceChatbot() {
         <div className="w-full max-w-4xl mb-4">
           <div className="flex justify-between text-xs text-indigo-300 mb-1">
             <span>Progress</span>
-            <span>{answeredCount}/10 answered</span>
+            <span>{answeredCount}/4 answered</span>
           </div>
           <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
             <div
               className="h-full bg-gradient-to-r from-indigo-500 to-violet-500 rounded-full transition-all duration-700"
-              style={{ width: `${(answeredCount / 10) * 100}%` }}
+              style={{ width: `${(answeredCount / 4) * 100}%` }}
             />
           </div>
           <div className="flex justify-between mt-2">
-            {Array.from({ length: 10 }).map((_, i) => (
+            {Array.from({ length: 4 }).map((_, i) => (
               <div
                 key={i}
                 className={`w-6 h-6 rounded-full text-xs flex items-center justify-center font-semibold transition-all ${
