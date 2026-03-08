@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: skill-dev-frontend
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    depends_on:
+      - backend
+    networks:
+      - skill-dev-net
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: skill-dev-backend
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    # If the app needs to save files across container restarts, 
+    # we mount the audio/ directory as a volume.
+    volumes:
+      - ./backend/audio:/app/audio
+    networks:
+      - skill-dev-net
+
+networks:
+  skill-dev-net:
+    driver: bridge
